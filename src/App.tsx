@@ -24,6 +24,42 @@ const fact = (n:any)=>{
 }
 fact(8)
 
+// prime number testing 
+
+  let prime = (n:any)=>{
+   if(n< 2) {
+    return false
+   }
+   for(let i =2 ; i< n ; i++){
+    if((n % i ) === 0){
+      console.log("false")
+      return false
+    }
+   
+   }
+   console.log("true")
+  }
+ prime(53)
+
+  // number is a power of 2 or not 
+ 
+  const power = (n:any)=>{
+     if(n < 1){
+      console.log("false")
+      return false
+     }
+     while(n>1){
+      if(n % 2 !== 0){
+        console.log("false")
+        return false
+      }
+      n = n/2
+     }
+     console.log("true")
+     return true
+  }
+power(32)
+
 function App() {
   return (
     <div className="App">
